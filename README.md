@@ -107,6 +107,8 @@ GET http://localhost:5000/scalar
 
 ## 🏗️ Production Deployment
 
+The repository root includes a `Dockerfile` for container platforms such as Render. Select Docker deployment and set `RESEND_API_KEY`, `RESEND_FROM_EMAIL`, `CONTACT_RECEIVER_EMAIL`, and `FRONTEND_URL` in the platform's environment settings. The container listens on the platform-provided `PORT` (default `8080`).
+
 ```powershell
 dotnet publish -c Release -o ./publish
 ```

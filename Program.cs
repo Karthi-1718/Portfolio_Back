@@ -139,4 +139,4 @@ Console.WriteLine($"""
 """);
 Console.ResetColor();
 
-app.Run($"http://localhost:{port}");
+app.Run($"http://0.0.0.0:{port}");
